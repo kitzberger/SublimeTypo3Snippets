@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'${1:Vendor}.' . \$_EXTKEY,
+	'Pi1',
+	// Available controller actions
+	[
+		'${2:Records}' => 'list,show,create,edit,update,delete',
+	],
+	// Un-cachable controller actions
+	[
+		'$2' => 'create,edit,update,delete',
+	]
+);
+]]></content>
+	<tabTrigger>t3configurePlugin</tabTrigger>
+	<scope>source.php</scope>
+	<description>ExtensionUtility::configurePlugin()</description>
+</snippet>
