@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+defined('TYPO3_MODE') || die ('Access denied.');
+]]></content>
+	<tabTrigger>t3defOrDie</tabTrigger>
+	<scope>source.php</scope>
+	<description>TYPO3_MODE || die()</description>
+</snippet>
