@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$query = 'SELECT * FROM ${1:pages} WHERE uid=1';
+\$res = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('$1')->executeQuery(\$query);
+]]></content>
+	<tabTrigger>t3-db-connection</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

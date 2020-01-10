@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Database\Connection;
+use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
+]]></content>
+	<tabTrigger>t3-db-use-statements</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
