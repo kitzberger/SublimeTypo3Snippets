@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+renderType>selectSingleBox</renderType>
+]]></content>
+	<tabTrigger>renderType:singleBox</tabTrigger>
+	<scope>text.xml</scope>
+	<description></description>
+</snippet>

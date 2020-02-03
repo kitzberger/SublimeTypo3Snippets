@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+renderType>selectCheckBox</renderType>
+]]></content>
+	<tabTrigger>renderType:checkBox</tabTrigger>
+	<scope>text.xml</scope>
+	<description></description>
+</snippet>

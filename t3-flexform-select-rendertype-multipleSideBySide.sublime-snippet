@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+renderType>selectMultipleSideBySide</renderType>
+]]></content>
+	<tabTrigger>renderType:multipleSideBySide</tabTrigger>
+	<scope>text.xml</scope>
+	<description></description>
+</snippet>

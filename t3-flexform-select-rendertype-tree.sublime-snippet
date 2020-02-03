@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+renderType>selectTree</renderType>
+]]></content>
+	<tabTrigger>renderType:tree</tabTrigger>
+	<scope>text.xml</scope>
+	<description></description>
+</snippet>
