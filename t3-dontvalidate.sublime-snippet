@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+// xxx needs to be the name of the property
+@TYPO3\CMS\Extbase\Annotation\IgnoreValidation("xxx")
+]]></content>
+	<tabTrigger>@dontvalidate</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
