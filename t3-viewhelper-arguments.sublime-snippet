@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+    public function initializeArguments()
+    {
+        \$this->registerArgument('uids', 'string', 'The uid of the record.', true, null);
+        \$this->registerArgument('title', 'string', 'The title which is not required and has a default value.', false, 'Default title!');
+        \$this->registerArgument('files', 'object|array', '', true, []);
+    }
+]]></content>
+	<tabTrigger>t3-viewhelper-arguments</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
