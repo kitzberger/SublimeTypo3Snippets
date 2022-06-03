@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+\$siteFinder = GeneralUtility::makeInstance(SiteFinder::class);
+\$site = \$siteFinder->getSiteByPageId(\$uid);
+\$rootPid = \$site->getRootPageId();
+#\$site = \$siteFinder->getSiteByRootPageId(\$rootPid);
+#\$site = \$siteFinder->getSiteByIdentifier(\$identifier);
+#\$site = \$siteFinder->getAllSites();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>t3-sitefinder</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
