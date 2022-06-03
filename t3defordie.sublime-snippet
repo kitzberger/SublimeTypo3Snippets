@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-defined('TYPO3_MODE') || die ('Access denied.');
+defined('TYPO3_MODE') || die('Access denied.');
 ]]></content>
 	<tabTrigger>t3defOrDie</tabTrigger>
 	<scope>source.php</scope>
