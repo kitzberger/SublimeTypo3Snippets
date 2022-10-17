@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+\$queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('${1:pages}');
+\$pages = \$queryBuilder
+    ->insert('$1')
+	->values([
+		'doktype' => 1,
+		'title' => 'foobar',
+	])
+    ->execute();
+\$uid = \$queryBuilder->getConnection()->lastInsertId();
+]]></content>
+	<tabTrigger>t3-db-querybuilder-insert</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

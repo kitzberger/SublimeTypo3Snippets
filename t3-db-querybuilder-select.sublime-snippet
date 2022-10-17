@@ -15,6 +15,6 @@
     #->add('orderBy', 'FIELD(eventtype, 0, 4, 1, 2, 3)') // method to add low-level parts
     ->execute()->fetchAll();
 ]]></content>
-	<tabTrigger>t3-db-querybuilder</tabTrigger>
+	<tabTrigger>t3-db-querybuilder-select</tabTrigger>
 	<scope>source.php</scope>
 </snippet>
