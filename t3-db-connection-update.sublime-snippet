@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+\$db = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('${1:pages}');
+\$db->update(
+	'$1',
+	[
+		'CType' => 'new_ctype',
+		'bodytext' => 'foo bar',
+	],
+	[
+		'uid' => 123,
+	]
+);
+]]></content>
+	<tabTrigger>t3-db-connection-update</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
