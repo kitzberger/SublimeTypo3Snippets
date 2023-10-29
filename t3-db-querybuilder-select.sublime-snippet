@@ -2,7 +2,7 @@
 	<content><![CDATA[
 \$queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('${1:pages}');
 \$queryBuilder->getRestrictions()->removeAll()->add(GeneralUtility::makeInstance(DeletedRestriction::class));
-\$pages = \$queryBuilder
+\$$1 = \$queryBuilder
     ->select('*')
     ->from('$1')
     ->where(\$queryBuilder->expr()->eq('uid', \$queryBuilder->createNamedParameter(\$uid, \PDO::PARAM_INT)))
@@ -13,7 +13,7 @@
     #->groupBy('pid')
     #->setMaxResults(10)
     #->add('orderBy', 'FIELD(eventtype, 0, 4, 1, 2, 3)') // method to add low-level parts
-    ->execute()->fetchAll();
+    ->executeQuery()->fetchAll();
 ]]></content>
 	<tabTrigger>t3-db-querybuilder-select</tabTrigger>
 	<scope>source.php</scope>
