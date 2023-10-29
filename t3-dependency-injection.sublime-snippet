@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  # Declare own classes to be injectable
+  My\Extension\:
+    resource: '../Classes/*'
+    #exclude: '../Classes/Domain/Model/*'
+
+  # Declare this class to be public, so its constructor dependencies are
+  # injected properly when being instanciated by GeneralUtility::makeInstance()
+  # See 'What to make public' on reference docs!
+  My\Extension\Backend\FlexformHelper:
+    public: true
+]]></content>
+	<tabTrigger>t3-dependency-injection</tabTrigger>
+	<scope>source.yaml</scope>
+</snippet>
