@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+    public function ${1:index}Action(): ResponseInterface
+    {
+        \$${2:record}s = \$this->$2Repository->findAll();
+
+        \$this->view->assignMultiple([
+            '$2s' => \$$2s,
+        ]);
+
+        return \$this->htmlResponse();
+    }
+]]></content>
+	<tabTrigger>t3-extbase-action</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
