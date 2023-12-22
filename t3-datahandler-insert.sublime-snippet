@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+\$dataHandler = GeneralUtility::makeInstance(DataHandler::class);
+\$cmd = [];
+\$data = [
+	'${1:pages}' => [
+		StringUtility::getUniqueId('NEW') => [
+			'pid' => 0,
+			'title' => 'new page',
+		],
+	],
+];
+\$dataHandler->start(\$data, \$cmd);
+\$dataHandler->process_datamap();
+]]></content>
+	<tabTrigger>t3-datahandler-insert</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
