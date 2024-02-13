@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\$queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('${1:pages}');
+\$pages = \$queryBuilder
+    ->delete('$1')
+    ->where(\$queryBuilder->expr()->eq('uid', \$queryBuilder->createNamedParameter(\$uid, \PDO::PARAM_INT)))
+    ->executeStatement();
+]]></content>
+	<tabTrigger>t3-db-querybuilder-delete</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
