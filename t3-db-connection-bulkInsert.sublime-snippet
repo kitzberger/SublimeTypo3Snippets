@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+\$db = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('${1:pages}');
+\$db->bulkInsert(
+	'$1',
+	[
+		[\$pid1, \$someString1],
+		[\$pid2, \$someString2],
+	],
+	[
+		'pid',
+		'title',
+	],
+	[
+		Connection::PARAM_INT,
+		Connection::PARAM_STR,
+	],
+);
+]]></content>
+	<tabTrigger>t3-db-connection-bulkInsert</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

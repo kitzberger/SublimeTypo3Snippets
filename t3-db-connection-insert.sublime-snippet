@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+\$db = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('${1:pages}');
+\$db->insert(
+	'$1',
+	[
+		'pid' => \$pid,
+		'some_string' => \$someString,
+	],
+	[
+		Connection::PARAM_INT,
+		Connection::PARAM_STR,
+	],
+);
+\$uid = (int)$db->lastInsertId();
+]]></content>
+	<tabTrigger>t3-db-connection-insert</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

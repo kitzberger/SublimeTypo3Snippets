@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\$db = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('${1:pages}');
+\$db->delete(
+	'$1',
+    ['uid' => \$uid],
+    [Connection::PARAM_INT],
+);
+]]></content>
+	<tabTrigger>t3-db-connection-delete</tabTrigger>
+	<scope>source.php</scope>
+</snippet>

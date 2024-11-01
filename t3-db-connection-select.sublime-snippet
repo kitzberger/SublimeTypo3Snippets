@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+\$db = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('${1:pages}');
+\$db->select(
+	'*',
+	'$1',
+	[
+		'uid' => 123,
+	]
+);
+]]></content>
+	<tabTrigger>t3-db-connection-select/count</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
