@@ -12,7 +12,7 @@
       'parentPage',
       \$queryBuilder->expr()->eq('parentPage.uid', \$queryBuilder->quoteIdentifier('$1.pid'))
     )
-    ->where(\$queryBuilder->expr()->eq('$1.uid', \$queryBuilder->createNamedParameter(\$uid, \PDO::PARAM_INT)))
+    ->where(\$queryBuilder->expr()->eq('$1.uid', \$queryBuilder->createNamedParameter(\$uid, Connection::PARAM_INT)))
     ->executeQuery()->fetchAll();
 ]]></content>
 	<tabTrigger>t3-db-querybuilder-select-join</tabTrigger>
