@@ -14,7 +14,7 @@
     #->groupBy('pid')
     #->setMaxResults(10)
     #->add('orderBy', 'FIELD(eventtype, 0, 4, 1, 2, 3)') // method to add low-level parts
-    ->executeQuery()->fetchAll();
+    ->executeQuery()->fetchAllAssociative();
 ]]></content>
 	<tabTrigger>t3-db-querybuilder-select</tabTrigger>
 	<scope>source.php</scope>

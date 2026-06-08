@@ -7,7 +7,7 @@
 	->set('title', 'foobar') // quoted automatically!
 	->set('no_index', 1)
     ->where(\$queryBuilder->expr()->eq('uid', \$queryBuilder->createNamedParameter(\$uid, Connection::PARAM_INT)))
-    ->execute();
+    ->executeStatement();
 ]]></content>
 	<tabTrigger>t3-db-querybuilder-update</tabTrigger>
 	<scope>source.php</scope>

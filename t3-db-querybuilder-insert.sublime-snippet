@@ -7,7 +7,7 @@
 		'doktype' => 1,
 		'title' => 'foobar',
 	])
-    ->execute();
+    ->executeStatement();
 \$uid = \$queryBuilder->getConnection()->lastInsertId();
 ]]></content>
 	<tabTrigger>t3-db-querybuilder-insert</tabTrigger>
