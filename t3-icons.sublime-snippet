@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<?php
+
+use TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider;
+
+// Register icons not being part of TYPO3.Icons repository
+return [
+    'xyz' => [
+        'provider' => BitmapIconProvider::class,
+        'source' => 'EXT:xyz/Resources/Public/Icons/Extension.png',
+    ],
+];
+
+]]></content>
+	<tabTrigger>@t3-icons</tabTrigger>
+	<!-- <scope>source.php</scope> -->
+</snippet>
