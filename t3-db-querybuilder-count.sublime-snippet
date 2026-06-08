@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+\$queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('${1:pages}');
+\$queryBuilder->getRestrictions()->removeAll()->add(GeneralUtility::makeInstance(DeletedRestriction::class));
+\$$1 = \$queryBuilder
+    ->count('*')
+	#->addSelectLiteral('ExtractValue(pi_flexform, \'//T3FlexForms/data/sheet[@index="thx"]/language/field[@index="settings.flexform.thx.redirect"]/value\') as thxPage')
+    ->from('$1')
+    ->where(\$queryBuilder->expr()->eq('uid', \$queryBuilder->createNamedParameter(\$uid, Connection::PARAM_INT)))
+    #->where(\$queryBuilder->expr()->in('uid', \$queryBuilder->createNamedParameter(\$uids, Connection::PARAM_INT_ARRAY)))
+    #->where(\$queryBuilder->expr()->like('bodytext', \$queryBuilder->createNamedParameter('%'.\$queryBuilder->escapeLikeWildcards(\$text).'%')))
+    ->executeQuery()->fetchOne();
+]]></content>
+	<tabTrigger>t3-db-querybuilder-count</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
